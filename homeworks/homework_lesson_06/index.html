@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+    
+<form method="post" action="#" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+
+    <fieldset>
+        <legend>Homework lesson 06</legend>
+
+            <!-- Заблоковане поле -->
+
+            <label for="hello">Не чіпай мене!</label>
+            <input disabled type="text" name="hello" id="hello" placeholder="Привіт!">
+            <br><br>
+
+            <!-- Поле призначене тільки для читання -->
+
+            <label for="message">Прочитай мене!</label>
+            <input readonly type="text" name="message" id="message" placeholder="Це домашня робота до уроку про створення форм" size="45">
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+        <legend>Реєстраційна форма</legend>
+
+    <!-- Поле обов'язкове для заповнення -->
+
+            <label for="user_name">Повне ім'я  <sup>*</sup> </label>
+                <input required type="text" name="user_name" id="user_name" placeholder="Зеленський Володимир Олександрович" size="35">
+            <br><br>
+
+            <label for="user_email">Email <sup>*</sup></label>
+                <input required type="email" name="email" id="user_email" placeholder="prezedent@gov.ua">
+            <br><br>
+
+            <label for="password">Пароль <sup>*</sup></label>
+                <input required type="password" name="password" id="password">
+            <br><br>
+
+            <label for="password2">Повторіть пароль <sup>*</sup></label>
+                <input required type="password" name="password2" id="password2">
+            <br><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Ще трошки про тебе</legend>
+    <br>
+
+    <!-- Поле для завантаження файлу -->
+
+        <label for="photo">Ми хочемо бачити тебе (завантаж фото)</label>
+        <input type="file" name="photo" id="photo">
+        <br><br>
+
+    <!-- Числові поля -->
+
+        <label for="birthday">Дата народження</label>
+            <input type="date" name="birthday" id="birthday">
+            <br><br>
+
+        <label for="time">Час народження</label>
+            <input type="time" name="time" id="time">
+            <br><br>
+
+        <label for="age">Кількість повних років</label>
+            <input type="number" name="age" id="age">
+            <br><br>
+
+        <label for="phone">Номер твого телефону</label>
+            <input type="tel" name="phone" id="phone" placeholder="+ 38 (050) 625-18-56">
+            <br><br>
+
+    <!-- Радіо-кнопка -->
+
+        <legend>Стать</legend>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="gender" value="famale" checked>Жіноча
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                            <input type="radio" name="gender" value="male">Чоловіча
+                    </label>
+                </li>
+            </ul>
+            <br><br>
+
+<!-- Вибір декількох варіантів -->
+            
+        <label for="drinks">Твій улюблений напій</label>
+        <select name="drinks[]" id="drinks" multiple>
+
+            <optgroup label="Безалкогольний"></optgroup>
+
+                <option value="tea">Чай</option>
+                <option value="coffe">Кава</option>
+                <option value="juice">Сік</option>
+                <option value="water">Вода</option>
+                        
+            <optgroup label="Алкогольні"></optgroup>
+
+                            <option value="beer">Пиво</option>
+                            <option value="champagne">Шампанське</option>
+                            <option value="wine">Вино</option>
+                            <option value="martini">Мартіні</option>
+                            <option value="gin">Джин</option>
+                            <option value="whiskey">Віскі</option>
+        </select>
+        <br><br>
+
+    <!-- Вибір кольору -->
+
+    <label for="color">Твій улюблений колір</label>
+    <input type="color" name="color" id="color">
+    <br><br>
+
+    <!-- Посилання -->
+
+    <label for="web">Твій улюблений сайт</label>
+    <input type="url" name="web" id="web" placeholder="Введіть url адресу">
+    <br><br>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Я обираю</legend>
+
+    <!-- Випадаючий список -->
+
+        <legend>Найменування курсу</legend>
+        <label for="course">
+            <br>
+            <select name="course" id="course">
+
+                <option value="">-= Виберіть курс =-</option>
+
+                <optgroup label="Технічні"></optgroup>
+
+                    <option value="Front-End">Front-End розробка</option>
+                    <option value="Python">Python розробка</option>
+                    <option value="QA manual">QA manual</option>
+                    <option value="#C">#C розробка</option>
+                
+                <optgroup label="Нетехнічні"></optgroup>
+
+                    <option value="PM">Project Management в IT</option>
+                    <option value="BA">Бізнес-аналіз в IT</option>
+                    <option value="HR">HR Generalist в IT</option>
+                
+                <optgroup label="Дизайн"></optgroup>
+                    <option value="UI/UX Designe">UI/UX Designe</option>
+
+            </select>
+            <br><br>
+
+        </label>
+
+    <!-- Чек-бокс -->
+
+        <legend>Приорітетне значення під час навчання має</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="priority[]" value="duration" id="priority_duration">
+                    <label for="priority_duration">Тривалість курсу</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="priority[]" value="cost" id="priority_cost"> 
+                    <label for="priority_cost">Вартість курсу</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="priority[]" value="regime" id="priority_regime">
+                    <label for="priority_regime">Графік занять</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="priority[]" value="teacher" id="priority_teacher">
+                    <label for="priority_teacher">Викладач</label>
+                </li>
+            </ul>
+
+    <!-- Поле для введення тексту -->
+
+            <label for="motivation">Чому я обираю цей напрямок</label>
+                <textarea name="motivation" id="motivation" placeholder="Я обираю..."></textarea>
+                <br><br>
+
+    <!-- Повзунок -->
+
+            <label for="level">Оціни рівень своїх знань від 0 до 10</label>
+                <input type="range" name="level" id="level" min="0" max="10">
+                <br><br>
+
+    </fieldset>
+
+<!-- Кнопочки -->
+
+    <fieldset>
+        <legend>Кнопочки</legend>
+
+        <button type="submit">Надіслати</button>
+        <button type="reset">Скинути</button>
+        <button disabled="disabled">Упс...я не працюю</button>
+        <button>А я звичайна кнопочка</button>
+        
+    </fieldset>
+</form>
+
+</div>
+</body>
+</html>
