@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+
+.header {
+    margin-bottom: 70px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 24px;
+    margin-right: 192px;
+    margin-bottom: 24px;
+}
+
+.nav__item {
+display: inline-block;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav__item:last-child {
+    margin-right: 192px;
+}
+
+.nav__link {
+font-size: 16px;
+color: #2F281E;
+margin-top: 26px;
+margin-bottom: 26px;
+text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #FF9900;
+}
+
+.header_button_si {
+    width: 110px;
+    height: 46px;
+    color: #000000;
+    font-weight: bold;
+    background: #ffffff;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    margin-top: 17px; 
+    margin-bottom: 17px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.header_button_si:hover {
+   background: #FF9900;
+   color: #ffffff;
+}
+
+.header_button_su {
+    width: 110px;
+    height: 46px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #FF9900;
+    border: none;
+    border-radius: 4px;
+    margin-top: 17px; 
+    margin-bottom: 17px;
+    cursor: pointer; 
+}
+
+/* First section */
+
+.first-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.left_side {
+    padding-top: 97px;
+    padding-bottom: 97px;
+    margin-right: 56px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.first_section_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 180px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none; 
+    cursor: pointer;
+}

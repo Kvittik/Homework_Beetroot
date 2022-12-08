@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+	outline: none;
+    box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;}
+
+body {
+	font-family: 'Lucida Sans Unicode';
+	font-weight: normal;
+	background: #3399CC;
+	border: 25px solid #2B81AC;
+}
+
+.wrapper {
+	max-width: 1200px;
+	min-width: 400px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	font-size: 21px;
+	color: #FFFFFF;
+
+}
+
+h1 {
+	font-size: 21px;
+	color: #FFFFFF;
+	margin-top: 60px;
+	margin-bottom: 35px;
+}
+
+.weather_icon {
+	width: 30px;
+	height: 25px;
+	margin-top: 60px;
+	margin-left: 13px;
+}
+
+main {
+	box-sizing: border-box;
+	background: #fff;
+	padding: 3px;
+}
+
+.cities{
+	font-size: 0px;
+}
+.cities:hover > li  {
+	opacity: 0.5;
+}
+.cities li {
+	width: 25%;
+	font-size: 26px;
+	font-weight: 500;
+	text-align: center;
+	border: 3px solid #fff;
+	display: inline-block;
+	padding: 30px 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.cities li:hover {
+	opacity: 1;
+}
+.cities li:nth-child(8n+1) {
+	width: 50%;
+}
+.cities li:last-child {
+	width: 100%;
+}
+.city__name {
+	margin-bottom: 19px;
+	color: #FFFFFF;
+}
+
+.temperature {
+	font-size: 22px;
+	margin-right: 11px;
+	margin-bottom: 19px;
+}
+
+.temperature::after {
+	content: 'C';
+}
+
+.cities li .temperature {
+	display: inline-block;
+	vertical-align: middle;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+	display: flex;
+	font-size: 21px;
+	color: #FFFFFF;
+	margin-top: 35px;
+	padding-bottom: 119px;
+}
+
+.city__Lisabon {
+	background:#3399CC ;
+}
+.city__Paris {
+	background: #33CCCC;
+}
+.city__Belgrade {
+	background: #996699;
+}
+.city__Cair {
+	background: #C24747;
+}
+.city__TelAviv {
+	background: #E2674A;
+}
+.city__Cair {
+	background: #FFCC66 ;
+}
+.city__NewYork {
+	background: #99CC99 ;
+}
+.city__NewDelhi{
+	background: #669999 ;
+}
+.city__SanFrancisco {
+	background: #CC6699 ;
+}
+.city__Tokyo {
+	background: #339966 ;
+}
+.city__Sydney {
+	background: #666699 ;
+}
+
+
