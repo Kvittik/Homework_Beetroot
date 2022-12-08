@@ -1,0 +1,27 @@
+/* staatliches-regular - latin */
+@font-face {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/staatliches/staatliches-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/staatliches/staatliches-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/staatliches/staatliches-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/staatliches/staatliches-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/staatliches-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/staatliches/staatliches-v11-latin-regular.svg#Staatliches') format('svg'); /* Legacy iOS */
+  }
+
+  /* kdam-thmor-pro-regular - latin */
+@font-face {
+    font-family: 'Kdam Thmor Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kdam-thmor-pro-v1-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/kdam_thmor_pro/kdam-thmor-pro-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/kdam_thmor_pro/kdam-thmor-pro-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/kdam_thmor_pro/kdam-thmor-pro-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/kdam_thmor_pro/kdam-thmor-pro-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/kdam_thmor_pro/kdam-thmor-pro-v1-latin-regular.svg#KdamThmorPro') format('svg'); /* Legacy iOS */
+  }
