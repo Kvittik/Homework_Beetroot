@@ -1,0 +1,252 @@
+$main_color: #FFCC00;
+$sub_color: #666666;
+$base_size: 16px;
+
+@mixin fz ($size_px) {
+    font-size: ($size_px / $base_size) * 1rem;
+}
+
+@mixin border ($size, $color) {
+    border: $size solid $color;
+}
+
+@mixin size ($size_w, $size_h) {
+    width: $size_w;
+    height: $size_h;
+    
+}
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 121px;
+    margin-bottom: 122px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@import '_header';
+
+/* Main section */
+
+.main {
+    display: flex;
+    margin-bottom: 122px; 
+}
+
+/* Left side */
+
+.left_side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $main_color;  
+}
+
+.photo_container {
+    @include size(430px, 430px);
+    padding: 15px;
+    position: relative;
+    &::before {
+        content: "";
+        display: inline-block;
+        @include size(100px, 100px);
+        position: absolute;
+        top: 0;
+        border-top: 1px solid $main_color;
+        left: 0;
+        border-left: 1px solid $main_color;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        @include size(100px, 100px);
+        position: absolute;
+        top: 0;
+        border-top: 1px solid $main_color;
+        right: 0;
+        border-right: 1px solid $main_color;;
+    }
+}
+
+.photo_wrap {
+    @include size(400, 400);
+    &::before {
+        content: '';
+        display: inline-block;
+        @include size(100px, 100px);
+        position: absolute;
+        bottom: 0;
+        border-bottom: 1px solid $main_color;
+        left: 0;
+        border-left: 1px solid $main_color;;
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        @include size(100px, 100px);
+        position: absolute;
+        bottom: 0;
+        border-bottom: 1px solid #FFCC00;;
+        right: 0;
+        border-right: 1px solid $main_color;
+    }
+}
+  
+.photo {
+    @include size(400px, 400px);
+    @include border(1px, $main_color)
+}
+
+    
+/* Right side */
+
+.right_side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 70px 65px 85px;
+}
+
+.name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    @include fz(36px);
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $sub_color;
+    margin-bottom: 30px;
+}
+
+
+.main_line {
+    @include size(100px, 1px);
+    background:  $main_color;
+    border: $main_color;
+    margin-bottom: 30px;
+}
+
+.profession {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    @include fz(24px);
+    line-height: 36px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $sub_color;
+    margin-bottom: 30px;
+}
+
+.social_list {
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.social_li {
+    margin-right: 5px;
+}
+
+.fa-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size(30px, 30px);
+    color: $sub_color;
+    @include border(2px, $sub_color);
+    border-radius: 50px;
+}
+
+.fa-brands:hover {
+    color: $main_color;
+    @include border(2px, $main_color);
+}
+
+.text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    @include fz(14px);
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.decor {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.small_line {
+    @include size(10px, 4px);
+    background: $main_color;
+    border: none;
+}
+
+.middle_line {
+    @include size(20px, 4px);
+    background: $main_color;
+    border: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.button {
+    @include size(118px, 24px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include border(1px, $main_color);
+    background: #FFFFFF;
+    margin-bottom: 70px;
+    &:hover {
+        background: $main_color;
+    }
+}
+
+.link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    @include fz(14px);
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $sub_color;
+    &:hover {
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,54 @@
+/* Header */
+
+.header {
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    @include fz(18px);
+    line-height: 24px;
+    color: #898F8F;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    @include fz(66px);
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_color;
+}
+
+.bonfire {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header_img {
+    position: relative;
+}
+
+.bonfire::before {
+    content: "";
+    width: 210px;
+    display: inline-block;
+    border-bottom: 1px solid $main_color;
+    margin-bottom: 10px;
+  }
+  
+  .bonfire::after {
+    content: "";
+    width: 210px;
+    display: inline-block;
+    border-bottom: 1px solid $main_color;
+    margin-bottom: 10px;
+  }
