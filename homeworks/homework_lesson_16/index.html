@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form styling</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="content">
+
+    <div class="container">
+
+        <form action="#" method="post">
+
+                <legend class="title">Create an Account</legend>
+
+                <div class="block">
+                    <div class="form_row">
+                        <label class="sub_title" for="first_name">First Name</label>
+                        <div class="form_wrapper">
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                    </div>
+
+                    <div class="form_row">
+                        <label class="sub_title" for="last_name">Last Name</label>
+                        <div class="form_wrapper">
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <label class="sub_title" for="email">E-mail</label>
+                    <div class="form_wrapper">
+                        <input type="email" name="email_f1" id="email_f1">
+                        <span class="email_message">We'll never share your email with anyone else.</span>
+                    </div>
+                </div>
+
+
+                <div class="form_row">
+                    <ul class="gender_list">
+
+                        <li class="gender_item">
+                            <input type="radio" name="gender" id="male" value="male" class="gender_input" checked>
+                            <label for="male" class="gender_label">Male</label>
+                        </li>
+
+                        <li class="gender_item">
+                            <input type="radio" name="gender" id="female" value="female" class="gender_input">
+                            <label for="female" class="gender_label">Female</label>
+                        </li>
+                        
+                    </ul>        
+                </div>
+
+                <div class="block">
+                    <div class="form_row">
+                        <label class="sub_title" for="country">Country</label>
+                        <div class="form_wrapper">
+                            <select name="country" id="country">
+                                <option value="">Select</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Turkey">Turkey</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form_row">
+                        <label class="sub_title" for="city">City</label>
+                        <div class="form_wrapper">
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="button button_long" type="submit">Sign Up</button>
+
+                <div class="terms">
+                    <p>
+                        By clicking the 'Sign Up' button, you confirm that you accept our
+                        <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>                        .
+                    </p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="log">
+                    <span class="question">Have an account?</span>
+                    <a href="">Log In</a>
+                </div>
+
+        </form>
+    </div>
+
+    <div class="container">
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <legend class="title">Profile</legend>
+
+
+            <div class="profile_block">
+
+                <div class="form_row">
+                    <img class="avatar" src="img/avatar.png" alt="">
+                </div>
+
+                <div class="form_row">
+
+                    <div class="change_avatar">
+                        <label class="label_file" for="file"></label>
+                        <div class="form_wrapper">
+                            <div>
+                                <input type="file" title=" " name="file" id="file" accept="image/png, image/jpeg">
+                            </div>
+                            <span class="file_text">Up to 1 MB (300x300 px)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form_row">
+
+                    <div class="form_wrapper">
+   
+                        <label class="bascket_label" for="bascket"></label>
+                        <input type="button" id="bascket">
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="block">
+
+                <div class="form_row">
+                    <label class="sub_title" for="name">Name</label>
+                    <div class="form_wrapper">
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <label class="sub_title" for="email">E-mail</label>
+                    <div class="form_wrapper">
+                        <input type="email" name="email_f2" id="email_f2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                    <div class="form_row">
+                        <label class="sub_title" for="country">Country</label>
+                        <div class="form_wrapper">
+                            <select name="country" id="country">
+                                <option value="">Select</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Turkey">Turkey</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form_row">
+                        <label class="sub_title" for="city">City</label>
+                        <div class="form_wrapper">
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="form_row">
+                        <label class="sub_title" for="zip_code">Zip Code</label>
+                        <div class="form_wrapper">
+                            <input type="text" name="zip_code" id="zip_code">
+                        </div>
+                    </div>
+
+                    <div class="form_row">
+                        <label class="sub_title" for="phone">Phone Number</label>
+                        <div class="form_wrapper">
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <button class="button button_short" type="submit">Update</button>
+
+        </form>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+crossorigin="anonymous"></script>
+
+<script src="plugins/formstyler/jquery.formstyler.min.js"></script>
+
+<script>
+            (function($) {
+        $(function() {
+            $('select').styler();
+        });
+        })(jQuery);
+
+</script>
+
+</body>
+</html>
