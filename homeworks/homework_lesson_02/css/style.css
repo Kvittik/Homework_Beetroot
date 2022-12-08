@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3F5F9;
+}
+
+.Wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    justify-content: center;
+
+}
+
+/* Information-section */
+
+.Information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.My-phone-section {
+    margin-top: 15px;
+    }
+
+.Phone-icon {
+    margin-right: 5px;
+}
+
+.link-number {
+    width: 170px;
+    height: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.My-mail-section {
+    margin-top: 15px;
+}
+
+.Mail-icon {
+    margin-right: 5px;
+}
+
+/* Social network section */
+
+.Social {
+    margin-top: 15px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/* Education section */
+
+.education{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* About me secnion */
+.About-me-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    margin-left: 32px;
+}
+
+/* My name section */
+.My-name-section{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;    
+}
+
+/* Tech Skills */
+.Tech-skills {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Work Experience */
+.Company {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.Item {
+margin-top: 10px;
+}
