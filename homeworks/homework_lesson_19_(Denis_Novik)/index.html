@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denis Novik - Responsive menu</title>
+
+    
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive_style.css">
+
+</head>
+<body>
+
+<header class="header">
+<div class="container">
+
+    <nav class="header_navigation">
+        <ul class="header_nav_list">
+            <li class="header_nav_li">
+                <a class="nav_link_home" href="">Home</a> 
+            </li>
+            <li class="header_nav_li">
+                <a class="nav_link" href="#about_me">About me</a> 
+            </li>
+            <li class="header_nav_li">
+                <a class="nav_link" href="#skills">Skills</a> 
+            </li>
+            <li class="header_nav_li">
+                <a class="nav_link" href="#portfolio">Portfolio</a> 
+            </li>
+            <li class="header_nav_li">
+                <a class="nav_link" href="#contacts">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+</header>
+
+<main>
+<div class="wrapper">
+
+<!-- First screen -->
+
+<section>
+<div class="container">
+    
+    <div class="main_information">
+
+        <h1 class="my_name">Denis Novik</h1>
+
+        <p class="about"> UX | UI designer
+            24 years old, Minsk</p>
+
+        <div class="menu_wrap"> 
+            
+            <!-- Mobile menu -->
+
+            <button id="mobile_menu_button" class="hamburger hamburger--minus menu_button" 
+            type="button" onclick="toggleMenu()">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+
+                <div id="mobile_menu">
+
+                    <nav class="mobile_menu_navigation">
+                        <ul class="mobile_menu_list">
+                            <li class="mobile_menu_li">
+                                <a class="mobile_menu_link" href="">Home</a> 
+                            </li>
+                            <li class="mobile_menu_li">
+                                <a class="mobile_menu_link" href="#about_me">About me</a> 
+                            </li>
+                            <li class="mobile_menu_li">
+                                <a class="mobile_menu_link" href="#skills">Skills</a> 
+                            </li>
+                            <li class="mobile_menu_li">
+                                <a class="mobile_menu_link" href="#portfolio">Portfolio</a> 
+                            </li>
+                            <li class="mobile_menu_li">
+                                <a class="mobile_menu_link" href="#contacts">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            <div class="lang">
+
+                <a class="lang_ru" href=""> RU </a>
+                <span class="lang_divider">|</span>
+                <a class="lang_eng" href="">ENG</a> 
+
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    
+        <div>
+            <img class="photo" src="img/Main_photo.svg" alt="photo">
+            <img class="photo_mobile" src="img/main_photo_mobile.png" alt="photo">
+        </div>
+
+</div>
+</section>
+
+<!-- About me section -->
+<section id="about_me" class="about_me_section">
+<div class="container">
+
+    <h3 class="about_me">About me</h3>
+        <div class="about_me_message">
+            <p> 
+                Hi, I'm Denis – UX/UI designer from Minsk.
+            </p>
+            <p>
+                I'm interested in design and everything connected with it.
+            </p>
+        </div>
+
+            <p class="about_me_message">
+                I'm studying at courses "Web and mobile design 
+                interfaces" in IT-Academy.
+            </p>
+
+            <p class="about_me_message">
+                Ready to implement excellent projects
+                with wonderful people.
+            </p>
+</div>
+</section>
+
+<!-- Skills section -->
+<section id="skills" class="skills_section">
+<div class="container">
+
+    <h3 class="title">Skills</h3>
+
+    <p class="skills_message">
+        I work in such programs as
+    </p>
+
+<div class="skills">
+
+    <!-- Adobe Photoshop -->
+    <div class="product_section">
+        <img class="logo" src="img/Logo_Ps.svg" alt="Logo_Adobe_Photoshop">
+        <span class="name">Adobe Photoshop</span>
+        <div class="rating">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Grey_star.svg" alt="Grey_star">
+            <img src="img/Grey_star.svg" alt="Grey_star">
+            <img src="img/Grey_star.svg" alt="Grey_star">
+            <img src="img/Grey_star.svg" alt="Grey_star">
+        </div>
+    </div>
+
+    <!-- Adobe Illustrator -->
+    <div class="product_section">
+        <img class="logo" src="img/Logo_Ai.svg" alt="Logo_Adobe_Illustrator">
+        <span class="name">Adobe Illustrator</span>
+        <div class="rating">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star"> 
+            <img src="img/Grey_star.svg" alt="Grey_star">
+            <img src="img/Grey_star.svg" alt="Grey_star">
+        </div>
+    </div>
+
+    <!-- AdobeAfter Effects -->
+
+    <div class="product_section">
+        <img class="logo" src="img/Logo_Ae.svg" alt="Logo_AdobeAfter_Effects">
+        <span class="name">AdobeAfter Effects</span>
+        <div class="rating">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Grey_star.svg" alt="Grey_star">
+        </div>
+    </div>
+
+    <!-- Figma -->
+    <div class="product_section">
+        <img class="logo" src="img/Logo_Figma.svg" alt="Logo_Figma">
+        <span class="name">Figma</span>
+        <div class="rating">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+            <img src="img/Black_star.svg" alt="Black_star">
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio section -->
+<section id="portfolio" class="portfolio_section">
+<div class="container">
+
+    <h2 class="portfolio_title">Portfolio</h2>
+
+    <!-- Fasion store -->
+    <div class="store">
+        <img class="image" src="img/Fashion-Store.svg" alt="Fashion-Store">
+        <a href="" class="store_text">Online fashion store - Homepage</a>
+    </div>
+
+    <!-- Reebok store -->
+    <div class="store">
+        <img class="image" src="img/Reebok_web.svg" alt="Reebok_store">
+        <a href="" class="store_text">Reebok Store - Concept</a>
+    </div>
+
+    <!-- Braun Landing Page -->
+    <div class="store_last">
+        <img class="image" src="img/Braun-landing.svg" alt="Braun Landing Page">
+        <a href="" class="store_text">Braun Landing Page - Concept</a>
+    </div>
+</div>
+</section>
+</div>
+</main>
+
+<!-- Contacts section -->
+<footer>
+<div class="container">
+<div id="contacts" class="contacts_section">
+
+    <h3 class="contacts_title">Contacts</h3>
+
+    <div class="contacts_message">
+        <p>Want to know more or just chat?</p>
+        <p> You are welcome!</p>
+    </div>
+
+    <button class="footer_button">
+        Send message 
+    </button>
+
+    <ul class="social_group">
+        <li class="social_li">
+            <a href="https://www.linkedin.com/" target="blanc">
+                <img class="social_link" src="img/Linkedin.svg" alt="Logo_Linkedin">
+            </a>
+        </li>
+        <li class="social_li">
+            <a href="https://www.instagram.com/" target="blanc">
+                <img class="social_link" src="img/Instagram.svg" alt="Logo_Instagram">
+            </a>
+        </li>
+        <li class="social_li">
+            <a href="https://www.behance.net/" target="blanc">
+                <img class="social_link" src="img/Behance.svg" alt="Logo_Behance">
+            </a>
+        </li>
+        <li class="social_li">
+            <a href="https://dribbble.com/" target="blanc">
+                <img class="social_link" src="img/Dribbble.svg" alt="Logo_Dribbble">
+            </a>
+        </li>
+    </ul>
+
+    <span class="social_message">Like me on LinkedIn, Instagram, Behance, Dribble</span>
+</div>
+</div>
+</footer>
+
+<script>
+
+    function toggleMenu(){
+        document.getElementById("mobile_menu").classList.toggle("open")
+        document.getElementById("mobile_menu_button").classList.toggle("is-active")
+    }
+
+</script>
+
+</body>
+</html>

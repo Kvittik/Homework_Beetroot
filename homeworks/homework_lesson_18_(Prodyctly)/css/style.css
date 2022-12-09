@@ -27,6 +27,12 @@ a {
     max-width: 1200px;
 }
 
+/* Mobile menu */
+
+.menu_button {
+    margin-top: 10px;
+}
+
 /* Header */
 
 .header {

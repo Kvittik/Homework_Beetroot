@@ -1,0 +1,132 @@
+@media screen and (max-width: 860px) {
+
+.container {
+    max-width: 860px;
+    width: 90%;
+} 
+
+}
+
+@media screen and (max-width: 720px) {
+
+.my_name, .about {
+    width: 35%;
+}
+
+.skills {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+.header_nav_list {
+display: none;
+}
+
+.main_information {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+}
+
+.menu_button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #FFFFFF;
+    border: none;
+    z-index: 2;
+}
+
+.menu_image {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.about {
+    width: 45%;
+}
+
+.lang {
+    display: none;
+}
+
+.about_me_section,
+.skills_section,
+.portfolio_section,
+.contacts_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.product_section {
+    margin-bottom: 60px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.main_information {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.my_name {
+    margin-bottom: 23px;
+}
+
+.about {
+    width: 45%;
+}
+
+.skills {
+justify-content: center;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+
+.main_information {
+    display: block;
+}
+
+.about {
+    margin: 0;
+    margin-bottom: 36.94px;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    
+.about {
+    width: 45%;
+}
+
+.photo {
+    display: none;
+    }
+    
+.photo_mobile {
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer_button {
+    width: 100%;
+}
+
+}
