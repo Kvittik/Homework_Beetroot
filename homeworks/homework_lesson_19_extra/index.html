@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar menu (light)</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="webcss/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+
+<body>
+
+    <div class="wrapper">
+
+        <aside id="mobile_menu" class="sidebar close"> 
+
+            <div class="heading">
+            
+                <img class="logo_image" src="img/heading.svg" alt="">
+                <span class="logo_title">LightBoard</span>
+
+                <button id="mobile_menu_button" class="menu_button" 
+                type="button" onclick="toggleMenu()">
+                    <div class="sumbol"></div>
+                    </button>
+
+            </div>
+
+            <nav>
+
+                <div class="icon_item">
+                <a class="icon_link" href="">
+                    <span class="icon-dashboard icon"></span>
+                    <span class="title">Dashboard</span>
+                </a>
+                </div>
+                
+                <ul class="nav_list">
+
+                <li>
+                    <p class="name">
+                        Apps
+                    </p>
+                </li>
+                <li class="divider">
+                <div class="short"></div>
+                <div class="long"></div>
+                <div class="short"></div>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-mail icon"></span>
+                        <span class="title">Email</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-bubble icon"></span>
+                        <span class="title">Chats</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-calendar icon"></span>
+                        <span class="title">Calendar</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-news icon"></span>
+                        <span class="title">News</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-study-1 icon"></span>
+                        <span class="title">Knowledge</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-stack icon"></span>
+                        <span class="title">File&nbsp;manager</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-location icon"></span>
+                        <span class="title">Leaflet&nbsp;Maps</span>
+                    </a>
+                </li>
+                <li class="divider">
+                    <div class="short"></div>
+                    <div class="long"></div>
+                    <div class="short"></div>
+                </li>
+                <li>
+                <span class="name">
+                    Auth&nbsp;pages
+                </span>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-profile icon"></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-lock icon"></span>
+                        <span class="title">Permissions</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-key icon"></span>
+                        <span class="title">Log&nbsp;Out</span>
+                    </a>
+                </li>
+                <li class="divider">
+                    <div class="short"></div>
+                    <div class="long"></div>
+                    <div class="short"></div>
+                </li>
+                <li>
+                    <span class="name">
+                        User&nbsp;Interface
+                    </span>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-eye icon"></span>
+                        <span class="title">Feather</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" vicon_link href="">
+                        <span class="icon-wallet icon"></span>
+                        <span class="title">Ecommerce</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-bulb icon"></span>
+                        <span class="title">Components</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-page icon"></span>
+                        <span class="title">Pages</span>
+                    </a>
+                </li>
+                <li class="icon_item">
+                    <a class="icon_link" href="">
+                        <span class="icon-pen icon"></span>
+                        <span class="title">Editor</span>
+                    </a>
+                </li>
+
+            </nav>
+
+        </aside>
+
+        <section class="main_content">
+            <img src="img/container.png" alt="">
+        </section>
+    </div>
+    
+<script>
+
+    function toggleMenu(){
+        document.getElementById("mobile_menu").classList.toggle("close")
+    }
+
+</script>
+
+</body>
+</html>
