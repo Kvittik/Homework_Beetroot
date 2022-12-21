@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.card_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card_item {
+  width: 190px;
+  height: 270px;
+}
+
+img {
+  width: 190px;
+  height: 270px;
+  border-radius: 8px;
+}
+
+.front {
+  width: 190px;
+  height: 270px;
+}
+
+.back {
+  width: 190px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+  height: 270px;
+  border: 3px solid #afa3a3;
+}
+
+.left {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+.number {
+  font-size: 30px;
+}
+
+.suit {
+  font-size: 24px;
+}
+
+.main {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.right {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+.hearts,
+.diamonds {
+  color: red;
+}
+
+.clubs,
+.spades {
+  color: black;
+}
+
+/* Main flip container */
+.flip_container {
+  width: 190px;
+  height: 270px;
+  perspective: 800px;
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip_container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
